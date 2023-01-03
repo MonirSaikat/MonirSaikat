@@ -2,3 +2,7 @@
 /build
 /.next
 .next
+.env.local
+.env
+./.env
+./env.local
