@@ -34,7 +34,7 @@ export const Skills = () => {
   return(
     <section id='skills' className='py-8 my-10'>
       <SectionTitle>Skills</SectionTitle>
-      <Marquee>
+      <Marquee gradient={false} className='bg-transparent'>
         {renderSkills}
       </Marquee>
     </section>
