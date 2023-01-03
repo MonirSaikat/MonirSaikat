@@ -10,13 +10,28 @@ export const Footer = () => {
   return(
     <footer className='py-5'>
       <div className='flex justify-center my-3'>
-        <Link href='https://www.linkedin.com/in/moniruzzamansaikat/' className={linkClasses} target="_blank">
+        <Link
+          aria-label='Visit my linkedin'
+          href='https://www.linkedin.com/in/moniruzzamansaikat/'
+          className={linkClasses}
+          target="_blank"
+        >
           <AiFillLinkedin />
         </Link>
-        <Link href='https://github.com/MonirSaikat' className={linkClasses} target="_blank">
+        <Link
+          aria-label='Visit my github'
+          href='https://github.com/MonirSaikat'
+          className={linkClasses}
+          target="_blank"
+        >
           <RxGithubLogo />
         </Link>
-        <a href="mailto:monirsaikat1@gmail.com" className={`${linkClasses} mr-0`} target="_blank">
+        <a
+          aria-label='Send me an email'
+          href="mailto:monirsaikat1@gmail.com"
+          className={`${linkClasses} mr-0`}
+          target="_blank"
+        >
           <MdEmail />
         </a>
       </div>
