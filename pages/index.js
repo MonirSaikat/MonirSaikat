@@ -1,4 +1,5 @@
 import { Header } from 'components/Header';
+import { HomeProjects } from 'components/HomeProject';
 import { Meta } from 'components/Meta';
 import { Skills } from 'components/Skills';
 
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Meta />
       <Header />
       <Skills />
+      <HomeProjects />
     </div>
   );
 };
