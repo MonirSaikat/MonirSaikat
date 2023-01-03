@@ -1,5 +1,6 @@
 import courseBuzzImg from 'assets/projects/course-buzz.png';
 import fizzFoodImg from 'assets/projects/fizz-food.png';
+import gmailLpImg from 'assets/projects/gmail-lp.png';
 
 export const projectsArray = [
   {
@@ -36,6 +37,17 @@ export const projectsArray = [
     githubUrl: 'https://github.com/MonirSaikat/fizz-food',
     technologies: ['react.js', 'firebase','react-stripe-checkout'],
     image: fizzFoodImg,
+  },
+  {
+    year: 2022,
+    title: 'Gmail Landing Page',
+    subtitle: 'A static landing page',
+    details: `This is a static html page. I tried to clone the landing page from gmail for practising tailwindcss back in 2022`,
+    slug: 'gmail-lp',
+    liveUrl: 'https://stalwart-semolina-0bf8df.netlify.app/',
+    githubUrl: 'https://github.com/MonirSaikat/gmail-lp',
+    technologies: ['html', 'css', 'tailwindcss', 'jQuery'],
+    image: gmailLpImg,
   }
 ];
 
