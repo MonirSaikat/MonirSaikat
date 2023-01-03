@@ -19,7 +19,7 @@ export const Navbar = () => {
       <li key={link.path} className='mx-2'>
         <Link
           className={classes}
-          style={{ color: router.pathname === link.path ? 'tomato' : '' }}
+          style={{ color: router.pathname === link.path ? 'tomato' : '#000' }}
           href={link.path}
         >
             {link.label}

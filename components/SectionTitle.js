@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 
-export const SectionTitle = ({ children, subtitle = false }) => {
+export const SectionTitle = ({ children, subtitle = false, className }) => {
   const classes = classNames(
+    className,
     {
       'text-2xl': subtitle
     },

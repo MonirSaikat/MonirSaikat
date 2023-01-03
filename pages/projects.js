@@ -3,9 +3,13 @@ import { SectionTitle } from 'components/SectionTitle';
 import Link from 'next/link';
 import { projectsArray } from 'utils/projects';
 import { BiLinkExternal } from 'react-icons/bi';
+import { AiOutlineLink } from 'react-icons/ai';
 
-const ButtonLink = ({ children, url, className, external = false }) => {
-  const classes = classNames('border px-4 py-1 text-sm rounded-full inline-flex items-center', className);
+export const ButtonLink = ({ children, url, className, external = false }) => {
+  const classes = classNames(
+    'border border-gray-300 px-4 py-1 text-sm rounded-full inline-flex items-center hover:border-gray-500',
+    className
+  );
 
   return(
     <Link
@@ -22,17 +26,22 @@ const ButtonLink = ({ children, url, className, external = false }) => {
 
 const ProjectItem = ({ project }) => {
   return(
-    <div className='border p-4 rounded-md shadow-sm bg-white'>
+    <div className='border p-4 rounded-md shadow-sm bg-white mb-5'>
       <p className='text-gray-600 text-sm mb-2'>{ project.year }</p>
-      <Link href={project.slug} className='text-xl text-gray-800 font-semibold hover:underline'>{ project.title }</Link>
-      <p className="my-2 text-gray-600">Course management website</p>
+      <Link href={`/projects/${project.slug}`} className='text-xl text-gray-800 font-semibold hover:underline inline-flex items-center'>
+        { project.title }
+        <AiOutlineLink />
+      </Link>
+      <p className="my-2 text-gray-600">{ project.subtitle }</p>
       <ButtonLink external url={project.liveUrl} className='mr-2'>Demo</ButtonLink>
       <ButtonLink external url={project.githubUrl} className='mr-2'>
-        Front Code
+        Code
       </ButtonLink>
-      <ButtonLink external url={project.githubBackendUrl}>
-        Backend Code
-      </ButtonLink>
+      {
+         project.githubBackendUrl && <ButtonLink external url={project.githubBackendUrl}>
+          Backend Code
+        </ButtonLink>
+      }
     </div>
   );
 };
