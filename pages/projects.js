@@ -56,7 +56,7 @@ const ProjectPage = () => {
     <div>
       <Meta title='Projects' />
       <SectionTitle>Projects</SectionTitle>
-      <h2 className='text-2xl mb-2'>Side Projects</h2>
+      {/* <h2 className='text-2xl mb-2'>Side Projects</h2> */}
       <div className="">
         {renderProjects}
       </div>
