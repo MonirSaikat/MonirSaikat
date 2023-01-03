@@ -65,12 +65,6 @@ export const Navbar = () => {
 
         <ul className='flex ml-[-6px] md:ml-0 mt-3'>
           { renderLinks }
-          <li className='mr-0 ml-2'>
-            <Link className='hover:text-secondary dark:text-gray-200 flex items-center' href="https://github.com/MonirSaikat" target='_blank'>
-              <span className='mr-2'>Github</span>
-              <BiLinkExternal />
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
