@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { SectionTitle } from 'components/SectionTitle';
 import Link from 'next/link';
-import { projectsArray } from 'utils/projects';
+import { projectsArray } from 'utils/projectsArray';
 import { BiLinkExternal } from 'react-icons/bi';
 import { AiOutlineLink } from 'react-icons/ai';
 

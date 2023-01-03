@@ -3,6 +3,18 @@ import fizzFoodImg from 'assets/projects/fizz-food.png';
 
 export const projectsArray = [
   {
+    year: '2022 - present',
+    title: 'ARS Furniture',
+    subtitle: 'Online furniture e-commerce website',
+    details: `This is an ecommerce website for furniture stuffs. Users Can login via via google or manually. Users have two different type, admin and non-admin. Admin users can add products and show all reviews. Users can add product to cart, leave a review for the website and much more. I have been started working on this project backin 2022 and still updating stuffs.`,
+    slug: 'ars-furniture',
+    liveUrl: 'https://course-buzz.web.app/',
+    githubUrl: 'https://github.com/MonirSaikat/ars-furniture-frontend',
+    githubBackendUrl: 'https://github.com/MonirSaikat/ars-furniture-backend',
+    technologies: ['react.js', 'swiper', 'firebase', 'react-quill', 'sweetalert'],
+    image: fizzFoodImg,
+  },
+  {
     year: 2022,
     title: 'Course Buzz',
     subtitle: 'Course management website',

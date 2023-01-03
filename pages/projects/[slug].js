@@ -2,7 +2,7 @@ import { SectionTitle } from 'components/SectionTitle';
 import { useRouter } from 'next/router';
 import { ButtonLink } from 'pages/projects';
 import { useEffect, useState } from 'react';
-import { getProjectBySlug } from 'utils/projects';
+import { getProjectBySlug } from 'utils/projectsArray';
 import { AiOutlineLink } from 'react-icons/ai';
 import { FiImage } from 'react-icons/fi';
 import classNames from 'classnames';
