@@ -4,7 +4,7 @@ import { BiLinkExternal } from 'react-icons/bi';
 
 export const ButtonLink = ({ children, url, className, external = false }) => {
   const classes = classNames(
-    'border border-gray-300 px-4 py-1 text-sm rounded-full inline-flex items-center hover:border-gray-500',
+    'border border-gray-300 px-4 py-1 text-sm rounded-full inline-flex items-center hover:border-gray-500 bg-white',
     className
   );
 
