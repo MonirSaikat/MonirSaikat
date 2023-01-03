@@ -4,7 +4,8 @@ import { BiLinkExternal } from 'react-icons/bi';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { activeLink } from 'utils/helpers';
-import { MdModeNight } from 'react-icons/md';
+import { MdLightMode, MdModeNight } from 'react-icons/md';
+import { useState } from 'react';
 
 const links = [
   { label: 'Home', path: '/' },
@@ -14,11 +15,18 @@ const links = [
 
 export const Navbar = () => {
   const router = useRouter();
+  const [theme, setTheme] = useState('dark');
   const classes = classNames('hover:text-secondary dark:text-gray-200',
   {
     'text-blue': activeLink(router)
   }
   );
+
+  const onUpdateTheme = () => {
+    const updatedTheme = theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.classList.toggle('dark');
+    setTheme(updatedTheme);
+  };
 
   const renderLinks = links.map(link => {
     return(
@@ -38,8 +46,13 @@ export const Navbar = () => {
       <div className="container flex flex-wrap justify-between mx-auto items-center">
         <Logo />
 
-        <button className='text-xl'>
-          <MdModeNight />
+        <button
+          className='text-xl dark:text-gray-200'
+          onClick={onUpdateTheme}
+        >
+          {
+            theme === 'dark' ? <MdModeNight /> : <MdLightMode />
+          }
         </button>
 
         <div className='w-full md:block md:w-auto z-20'>

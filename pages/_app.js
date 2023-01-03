@@ -4,7 +4,7 @@ import '../styles/global.css';
 
 const App = ({ Component, pageProps }) => {
   return(
-    <div className='font-inter'>
+    <div className='font-inter dark:bg-gray-900'>
       <Navbar />
       <div className="container mx-auto pt-3">
         <Component {...pageProps} />
