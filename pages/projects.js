@@ -1,29 +1,9 @@
-import classNames from 'classnames';
 import { SectionTitle } from 'components/SectionTitle';
 import Link from 'next/link';
 import { projectsArray } from 'utils/projectsArray';
-import { BiLinkExternal } from 'react-icons/bi';
 import { AiOutlineLink } from 'react-icons/ai';
 import { Meta } from 'components/Meta';
-
-export const ButtonLink = ({ children, url, className, external = false }) => {
-  const classes = classNames(
-    'border border-gray-300 px-4 py-1 text-sm rounded-full inline-flex items-center hover:border-gray-500',
-    className
-  );
-
-  return(
-    <Link
-      className={classes}
-      href={ url }
-      target={external ? '_blank' : '_self'}
-    >
-      { children }
-      <BiLinkExternal className='ml-1' />
-    </Link>
-  );
-}
-
+import { ButtonLink } from 'components/ButtonLink';
 
 const ProjectItem = ({ project }) => {
   return(
