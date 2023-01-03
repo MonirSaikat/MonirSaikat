@@ -20,7 +20,7 @@ const BlogPage = ({ posts }) => {
   return(
     <div>
       <SectionTitle>Blog</SectionTitle>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid md:grid-cols-2 gap-3">
         {posts.map(post => <PostItem key={post.slug} post={post} />)}
       </div>
     </div>
