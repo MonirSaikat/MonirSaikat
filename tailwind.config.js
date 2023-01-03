@@ -17,7 +17,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': '#00A0B0'
+        'primary': '#00A0B0',
+        'secondary': 'tomato'
       },
     },
   },
