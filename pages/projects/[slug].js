@@ -6,6 +6,7 @@ import { ProjectLinks } from 'components/ProjectLinks';
 import { ProjectTechnologies } from 'components/ProjectTechnologies';
 import { ProjectImage } from 'components/ProjectImage';
 import { ProjectDescription } from 'components/ProjectDescription';
+import { Meta } from 'components/Meta';
 
 const ProjectDetails = () => {
   const [project, setProject] = useState(null);
@@ -19,6 +20,7 @@ const ProjectDetails = () => {
 
   return(
     <div>
+      <Meta title={`Projects | ${project.title}`} />
       <SectionTitle className='mb-1'>{project.title}</SectionTitle>
       <p className='text-gray-600'>{project.subtitle}</p>
       <ProjectDescription project={project} />
