@@ -43,29 +43,29 @@ export const Navbar = () => {
 
   return(
     <nav className='py-5 flex items-center dark:bg-gray-900'>
-      <div className="container flex flex-wrap justify-between mx-auto items-center">
-        <Logo />
+      <div className="container mx-auto">
+        <div className="flex justify-between">
+          <Logo />
 
-        <button
-          className='text-xl dark:text-gray-200'
-          onClick={onUpdateTheme}
-        >
-          {
-            theme === 'dark' ? <MdModeNight /> : <MdLightMode />
-          }
-        </button>
-
-        <div className='w-full md:block md:w-auto z-20'>
-          <ul className='flex mt-2 ml-[-6px] md:ml-0'>
-            { renderLinks }
-            <li className='mr-0 ml-2'>
-              <Link className='hover:text-secondary dark:text-gray-200 flex items-center' href="https://github.com/MonirSaikat" target='_blank'>
-                <span className='mr-2'>Github</span>
-                <BiLinkExternal />
-              </Link>
-            </li>
-          </ul>
+          <button
+            className='text-xl dark:text-gray-200'
+            onClick={onUpdateTheme}
+          >
+            {
+              theme === 'dark' ? <MdModeNight /> : <MdLightMode />
+            }
+          </button>
         </div>
+
+        <ul className='flex ml-[-6px] md:ml-0 mt-3'>
+          { renderLinks }
+          <li className='mr-0 ml-2'>
+            <Link className='hover:text-secondary dark:text-gray-200 flex items-center' href="https://github.com/MonirSaikat" target='_blank'>
+              <span className='mr-2'>Github</span>
+              <BiLinkExternal />
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
