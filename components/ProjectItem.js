@@ -10,7 +10,7 @@ export const ProjectItem = ({ project }) => {
         {project.title}
         <AiOutlineLink />
       </Link>
-      <p className="my-2 text-gray-600">{project.subtitle}</p>
+      <p className="my-3 text-sm text-gray-600">{project.subtitle}</p>
       <ButtonLink external url={project.liveUrl} className='mr-2'>Demo</ButtonLink>
       <ButtonLink external url={project.githubUrl} className='mr-2'>
         Code
