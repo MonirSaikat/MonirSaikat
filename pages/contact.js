@@ -6,6 +6,7 @@ import { Input } from 'components/Input';
 import { Button } from 'components/Button';
 import emailjs from '@emailjs/browser';
 import { createRef, useEffect, useState } from 'react';
+import { SectionTitle } from 'components/SectionTitle';
 
 const schema = yup.object({
   name: yup.string().required(),
@@ -48,6 +49,7 @@ const contactPage = () => {
     <div>
       <Meta title='Contact' />
       <div>
+        <SectionTitle>Contact me</SectionTitle>
         <form onSubmit={handleSubmit(onSubmit)} ref={form}>
           <Input
             register={register}
