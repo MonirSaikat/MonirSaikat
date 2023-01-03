@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { projectsArray } from 'utils/projectsArray';
 import { BiLinkExternal } from 'react-icons/bi';
 import { AiOutlineLink } from 'react-icons/ai';
+import { Meta } from 'components/Meta';
 
 export const ButtonLink = ({ children, url, className, external = false }) => {
   const classes = classNames(
@@ -53,6 +54,7 @@ const ProjectPage = () => {
 
   return(
     <div>
+      <Meta title='Projects' />
       <SectionTitle>Projects</SectionTitle>
       <h2 className='text-2xl mb-2'>Side Projects</h2>
       <div className="">
