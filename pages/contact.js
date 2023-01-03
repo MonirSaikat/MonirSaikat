@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { Input } from 'components/Input';
+import { Button } from 'components/Button';
 
 const schema = yup.object({
   name: yup.string().required(),
@@ -43,7 +44,7 @@ const contactPage = () => {
             label="message"
           />
 
-          <button className="p-3 my-3 bg-sky-300">Submit</button>
+          <Button>Submit</Button>
         </form>
       </div>
     </div>
