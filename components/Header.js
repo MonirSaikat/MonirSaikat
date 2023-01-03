@@ -3,7 +3,7 @@ export const Header = () => {
     <header className='py-8 min-h-[300px] flex items-center'>
       <div>
         <h1 className="text-5xl text-gray-700 mb-5 font-bold">Hey, I' am Saikat</h1>
-        <p className="text-xl text-gray-600 mb-5">Welcome to my website 🕸</p>
+        <p className="text-xl text-gray-600 mb-5">Full-stack software engineer 👨‍💻</p>
         <p className="text-xl text-gray-600">
           I help people turn their ideas into
           websites that work.
