@@ -14,7 +14,7 @@ const links = [
 
 export const Navbar = () => {
   const router = useRouter();
-  const classes = classNames('hover:text-sky-700');
+  const classes = classNames('hover:text-secondary');
 
   const renderLinks = links.map(link => {
     return(
@@ -43,7 +43,7 @@ export const Navbar = () => {
           <ul className='flex flex-col md:flex-row p-4'>
             { renderLinks }
             <li className='mr-0 ml-2'>
-              <Link className='hover:text-primary flex items-center' href="https://github.com/MonirSaikat" target='_blank'>
+              <Link className='hover:text-secondary flex items-center' href="https://github.com/MonirSaikat" target='_blank'>
                 <span className='mr-2'>Github</span>
                 <BiLinkExternal />
               </Link>
