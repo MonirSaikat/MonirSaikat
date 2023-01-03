@@ -15,7 +15,7 @@ export const ButtonLink = ({ children, url, className, external = false }) => {
       target={external ? '_blank' : '_self'}
     >
       {children}
-      <BiLinkExternal className='ml-1' />
+      { external && <BiLinkExternal className='ml-1' /> }
     </Link>
   );
 }
