@@ -49,7 +49,8 @@ const contactPage = () => {
     <div>
       <Meta title='Contact' />
       <div>
-        <SectionTitle>Contact me</SectionTitle>
+        <SectionTitle className='mb-0'>Contact me</SectionTitle>
+        <p className='mb-3'>Have an idea to implement ? Just leave me a message here.</p>
         <form onSubmit={handleSubmit(onSubmit)} ref={form}>
           <Input
             register={register}
