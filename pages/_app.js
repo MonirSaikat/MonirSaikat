@@ -5,7 +5,9 @@ const App = ({ Component, pageProps }) => {
   return(
     <div className='font-inter'>
       <Navbar />
-      <Component {...pageProps} />
+      <div className="container mx-auto">
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 };

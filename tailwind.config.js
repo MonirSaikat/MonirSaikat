@@ -12,7 +12,7 @@ module.exports = {
     container: {
       padding: '1rem',
       screens: {
-        DEFAULT: '1092px'
+        DEFAULT: '768px'
       }
     },
     extend: {
