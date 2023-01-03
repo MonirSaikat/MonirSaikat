@@ -23,13 +23,16 @@ const ButtonLink = ({ children, url, className, external = false }) => {
 const ProjectItem = ({ project }) => {
   return(
     <div className='border p-4 rounded-md shadow-sm bg-white'>
-      <p className='text-gray-700 mb-2'>{ project.year }</p>
-      <Link href={project.liveUrl} className='text-xl text-gray-800 font-semibold hover:underline'>{ project.title }</Link>
-      <p className="my-3 text-gray-600">Course management website</p>
-      <ButtonLink external url={project.liveUrl} className='mr-2'>
-        GitHub
+      <p className='text-gray-600 text-sm mb-2'>{ project.year }</p>
+      <Link href={project.slug} className='text-xl text-gray-800 font-semibold hover:underline'>{ project.title }</Link>
+      <p className="my-2 text-gray-600">Course management website</p>
+      <ButtonLink external url={project.liveUrl} className='mr-2'>Demo</ButtonLink>
+      <ButtonLink external url={project.githubUrl} className='mr-2'>
+        Front Code
       </ButtonLink>
-      <ButtonLink external url={project.liveUrl}>Demo</ButtonLink>
+      <ButtonLink external url={project.githubBackendUrl}>
+        Backend Code
+      </ButtonLink>
     </div>
   );
 };
@@ -42,7 +45,8 @@ const ProjectPage = () => {
   return(
     <div>
       <SectionTitle>Projects</SectionTitle>
-      <div className="grid grid-cols-2 gap-2">
+      <h2 className='text-2xl mb-2'>Side Projects</h2>
+      <div className="">
         {renderProjects}
       </div>
     </div>

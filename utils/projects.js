@@ -4,6 +4,7 @@ export const projectsArray = [
   {
     year: 2022,
     title: 'Course Buzz',
+    slug: '/projects/course-buzz',
     liveUrl: 'https://course-buzz.web.app/',
     githubUrl: 'https://github.com/MonirSaikat/course-buzz-frontend',
     githubBackendUrl: 'https://github.com/MonirSaikat/course-buzz-backend',
