@@ -8,7 +8,7 @@ export const ProjectTechnologies = ({ project: { technologies } }) => {
       <div>
         {technologies.map(tech => {
           return (
-            <ButtonLink url={`https://www.google.com/search?q=${tech}`} key={tech} className='mr-2'>
+            <ButtonLink url={`https://www.google.com/search?q=${tech}`} key={tech} className='mr-2 mb-3'>
               {tech}
             </ButtonLink>
           );
