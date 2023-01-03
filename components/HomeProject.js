@@ -10,7 +10,7 @@ export const HomeProjects = () => {
     <div>
       <div className="flex justify-between items-center">
         <SectionTitle className='my-0'>Projects</SectionTitle>
-        <ButtonLink url='/projects'>View All</ButtonLink>
+        <ButtonLink url='/projects' className='py-2 mb-4'>View All</ButtonLink>
       </div>
       <Projects projects={projects} />
     </div>
