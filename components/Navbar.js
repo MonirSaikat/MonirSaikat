@@ -16,11 +16,7 @@ const links = [
 export const Navbar = () => {
   const router = useRouter();
   const [theme, setTheme] = useState('dark');
-  const classes = classNames('hover:text-secondary dark:text-gray-200',
-  {
-    'text-blue': activeLink(router)
-  }
-  );
+  const classes = classNames('hover:text-secondary dark:text-gray-200');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -41,7 +37,7 @@ export const Navbar = () => {
     return(
       <li key={link.path} className='mx-2 md:my-0'>
         <Link
-          className={`${classes} ${activeLink(router, link.path) ? 'text-orange-600' : 'text-secondary' }`}
+          className={`${classes} ${activeLink(router, link.path) ? 'text-secondary dark:text-secondary' : 'text-gray-900'}`}
           href={link.path}
         >
             {link.label}
