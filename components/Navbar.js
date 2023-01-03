@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { BiLinkExternal } from 'react-icons/bi';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
+import { activeLink } from 'utils/helpers';
 
 const links = [
   { label: 'Home', path: '/' },
@@ -19,7 +20,7 @@ export const Navbar = () => {
       <li key={link.path} className='mx-2'>
         <Link
           className={classes}
-          style={{ color: router.pathname === link.path ? 'tomato' : '#000' }}
+          style={{ color: activeLink(router, link.path) ? 'tomato' : '#000' }}
           href={link.path}
         >
             {link.label}
