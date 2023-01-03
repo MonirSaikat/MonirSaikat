@@ -6,7 +6,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'inter': ['Inter', 'sans - serif']
+    },
+    container: {
+      padding: '1rem',
+      screens: {
+        DEFAULT: '1092px'
+      }
+    },
+    extend: {
+      colors: {
+        'primary': '#00A0B0'
+      },
+    },
   },
   plugins: [],
 }

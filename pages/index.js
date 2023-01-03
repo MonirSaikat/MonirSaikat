@@ -1,9 +1,9 @@
-import { Button } from 'components/Button';
+import { Header } from 'components/Header';
 
 const HomePage = () => {
   return(
-    <div>
-      <Button>My Button</Button>
+    <div className='container mx-auto'>
+      <Header />
     </div>
   );
 };
