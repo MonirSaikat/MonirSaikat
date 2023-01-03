@@ -5,7 +5,7 @@ export const ProjectHeading = ({ children, icon }) => {
 
   return (
     <h2 className={classes}>
-      <span className='mr-1'>{children}</span>
+      <span className='mr-1 dark:text-gray-300'>{children}</span>
       {icon}
     </h2>
   );

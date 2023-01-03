@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { activeLink } from 'utils/helpers';
 import { MdLightMode, MdModeNight } from 'react-icons/md';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const links = [
   { label: 'Home', path: '/' },
@@ -22,9 +22,18 @@ export const Navbar = () => {
   }
   );
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if(savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.className = savedTheme;
+    }
+  }, []);
+
   const onUpdateTheme = () => {
     const updatedTheme = theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.classList.toggle('dark');
+    document.documentElement.className = updatedTheme;
+    localStorage.setItem('theme', updatedTheme);
     setTheme(updatedTheme);
   };
 
@@ -52,7 +61,7 @@ export const Navbar = () => {
             onClick={onUpdateTheme}
           >
             {
-              theme === 'dark' ? <MdModeNight /> : <MdLightMode />
+              theme === 'dark' ? <MdLightMode /> : <MdModeNight />
             }
           </button>
         </div>

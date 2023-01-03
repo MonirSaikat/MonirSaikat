@@ -4,8 +4,8 @@ import { ButtonLink } from './ButtonLink';
 
 export const ProjectItem = ({ project }) => {
   return (
-    <div className='border p-4 rounded-md shadow-sm bg-white mb-5 dark:bg-slate-900 dark:border-l-gray-900 dark:shadow-none'>
-      <p className='text-gray-600 text-sm mb-2'>{project.year}</p>
+    <div className='border p-4 rounded-md shadow-sm bg-white mb-5 dark:bg-slate-900 dark:border-gray-800 dark:shadow-none'>
+      <p className='text-gray-600 text-sm mb-2 dark:text-gray-400'>{project.year}</p>
       <Link
         href={`/projects/${project.slug}`}
         className='text-xl text-gray-800 font-semibold hover:underline inline-flex items-center dark:text-gray-200'>

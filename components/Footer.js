@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 import classNames from 'classnames';
 
 export const Footer = () => {
-  const linkClasses = classNames('text-3xl text-gray-700 hover:text-gray-800 mr-5');
+  const linkClasses = classNames('text-3xl text-gray-700 hover:text-gray-800 mr-5 dark:text-gray-300');
 
   return(
     <footer className='py-5'>
@@ -36,7 +36,7 @@ export const Footer = () => {
         </a>
       </div>
       <p
-        className="text-center font-semibold text-gray-600"
+        className="text-center font-semibold text-gray-600 dark:text-gray-300"
       >
         &copy; Monir Saikat | { new Date().getFullYear() }
       </p>

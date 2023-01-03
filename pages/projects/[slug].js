@@ -22,7 +22,7 @@ const ProjectDetails = () => {
     <div>
       <Meta title={`Projects | ${project.title}`} />
       <SectionTitle className='mb-1'>{project.title}</SectionTitle>
-      <p className='text-gray-600'>{project.subtitle}</p>
+      <p className='text-gray-600 dark:text-gray-300'>{project.subtitle}</p>
       <ProjectDescription project={project} />
       <ProjectTechnologies project={project} />
       <ProjectLinks project={project} />

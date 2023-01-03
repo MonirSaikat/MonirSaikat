@@ -4,7 +4,7 @@ export const ProjectDescription = ({ project }) => {
   return(
     <div className="my-5">
       <ProjectHeading>Description</ProjectHeading>
-      <p className='text-gray-800'>{project.details}</p>
+      <p className='text-gray-800 dark:text-gray-300'>{project.details}</p>
     </div>
   );
 };
