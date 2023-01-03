@@ -2,9 +2,32 @@ import { Logo } from './Logo';
 import Link from 'next/link';
 import { BiLinkExternal } from 'react-icons/bi';
 import { useRouter } from 'next/router';
+import classNames from 'classnames';
+
+const links = [
+  { label: 'Home', path: '/' },
+  { label: 'Skills', path: '/#skills' },
+  { label: 'Projects', path: '/projects' },
+  { label: 'Contact', path: '/contact' },
+];
 
 export const Navbar = () => {
   const router = useRouter();
+  const classes = classNames('hover:text-sky-700');
+
+  const renderLinks = links.map(link => {
+    return(
+      <li key={link.path} className='mx-2'>
+        <Link
+          className={classes}
+          style={{ color: router.pathname === link.path ? 'tomato' : '' }}
+          href={link.path}
+        >
+            {link.label}
+        </Link>
+      </li>
+    );
+  });
 
   return(
     <nav className='h-28 flex items-center'>
@@ -12,10 +35,7 @@ export const Navbar = () => {
         <Logo />
 
         <ul className='flex'>
-          <li className='mx-2'><Link className='hover:text-sky-700' href="#">About</Link></li>
-          <li className='mx-2'><Link className='hover:text-sky-700' href="#skills">Skill</Link></li>
-          <li className='mx-2'><Link className='hover:text-sky-700' href="/projects">Projects</Link></li>
-          <li className='mx-2'><Link className='hover:text-sky-700' href="#">Contact</Link></li>
+          { renderLinks }
           <li className='mr-0 ml-2'>
             <Link className='hover:text-primary flex items-center' href="https://github.com/MonirSaikat" target='_blank'>
               <span className='mr-2'>Github</span>
