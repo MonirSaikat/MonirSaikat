@@ -1,0 +1,29 @@
+{
+  "name": "monirsaikat",
+  "version": "1.0.0",
+  "description": "- 👋 Hi, I’m @MonirSaikat\r - 👀 I’m interested in modern web technologies\r - 🌱 I’m currently learning typescript, laravel\r - 💞️ I’m looking to collaborate on open source projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonirSaikat/MonirSaikat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonirSaikat/MonirSaikat/issues"
+  },
+  "homepage": "https://github.com/MonirSaikat/MonirSaikat#readme",
+  "dependencies": {
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
