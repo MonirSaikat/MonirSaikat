@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 
 export const Input = ({ label, className, register, errors, long, ...rest }) => {
-  const classes = classNames('border-2 rounded-sm py-2 px-4 w-full outline-none', {
+  const classes = classNames('border-2 rounded-sm py-2 px-4 w-full outline-none focus:border-gray-700', {
     'border-red-500': errors[label]?.message
   });
 
