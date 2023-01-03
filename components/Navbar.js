@@ -11,6 +11,7 @@ const links = [
   { label: 'Home', path: '/' },
   { label: 'Projects', path: '/projects' },
   { label: 'Contact', path: '/contact' },
+  { label: 'Blog', path: '/blog' },
 ];
 
 export const Navbar = () => {
