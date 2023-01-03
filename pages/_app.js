@@ -6,7 +6,7 @@ const App = ({ Component, pageProps }) => {
   return(
     <div className='font-inter'>
       <Navbar />
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-3">
         <Component {...pageProps} />
         <Footer />
       </div>
