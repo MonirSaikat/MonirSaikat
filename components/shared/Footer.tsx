@@ -44,7 +44,7 @@ export const Footer = () => {
             className={linkClasses}
             target="_blank"
           >
-            <AiFillLinkedin />
+            { link.icon }
           </Link>
         ))}
       </div>
