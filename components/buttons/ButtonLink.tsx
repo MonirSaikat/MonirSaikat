@@ -17,7 +17,7 @@ export const ButtonLink = ({
   external = false,
 }: ButtonLinkProps) => {
   const classes = classNames(
-    "border border-gray-300 px-4 py-1 text-sm rounded-full inline-flex items-center hover:border-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300",
+    "border border-gray-300 px-3 py-1 text-xs rounded-full inline-flex items-center hover:border-gray-500 bg-white dark:bg-gray-800 dark:text-gray-300 mr-1",
     className
   );
 
