@@ -1,3 +1,4 @@
+import { Meta } from 'components/Meta';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { marked } from 'marked';
@@ -10,6 +11,7 @@ const PostPage = ({
 }) => {
   return(
     <div className='prose dark:prose-invert'>
+      <Meta title={`Blog | ${frontmatter.title}`} />
       <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
     </div>
   );

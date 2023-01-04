@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { ButtonLink } from 'components/ButtonLink';
+import { Meta } from 'components/Meta';
 
 const PostItem = ({ post }) => {
   const { slug, title, date } = post.frontmatter;
@@ -20,6 +21,7 @@ const BlogPage = ({ posts }) => {
   return(
     <div>
       <SectionTitle>Blog</SectionTitle>
+      <Meta title='Blog' />
       <div className="grid md:grid-cols-2 gap-3">
         {posts.map(post => <PostItem key={post.slug} post={post} />)}
       </div>
