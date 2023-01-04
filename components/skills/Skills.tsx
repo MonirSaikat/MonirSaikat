@@ -10,7 +10,7 @@ import mongoDBImage from "assets/mongodb.png";
 import mysqlImage from "assets/mysql-logo.png";
 import { Skill } from "interfaces/Skill";
 import { useState } from "react";
-import { SectionTitle } from "./SectionTitle";
+import { SectionTitle } from "../shared/SectionTitle";
 import { SkillItem } from "./SkillItem";
 
 export const Skills = () => {

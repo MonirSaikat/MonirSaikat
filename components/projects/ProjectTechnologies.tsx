@@ -1,5 +1,5 @@
+import { ButtonLink } from 'components/buttons/ButtonLink';
 import { Project } from "interfaces/Project";
-import { ButtonLink } from "./ButtonLink";
 import { ProjectHeading } from "./ProjectHeading";
 
 interface ProjectTechnologiesProps {

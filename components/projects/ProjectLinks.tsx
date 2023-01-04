@@ -1,6 +1,6 @@
+import { ButtonLink } from 'components/buttons/ButtonLink';
 import { Project } from "interfaces/Project";
 import { AiOutlineLink } from "react-icons/ai";
-import { ButtonLink } from "./ButtonLink";
 import { ProjectHeading } from "./ProjectHeading";
 
 interface ProjectLinksProps {

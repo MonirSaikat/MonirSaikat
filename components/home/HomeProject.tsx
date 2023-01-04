@@ -1,8 +1,8 @@
 import { Project } from "interfaces/Project";
 import { projectsArray } from "utils/projectsArray";
-import { ButtonLink } from "./ButtonLink";
-import { Projects } from "./Projects";
-import { SectionTitle } from "./SectionTitle";
+import { ButtonLink } from "../buttons/ButtonLink";
+import { Projects } from '../projects/Projects';
+import { SectionTitle } from "../shared/SectionTitle";
 
 const projects: Project[] = projectsArray.slice(0, 3);
 

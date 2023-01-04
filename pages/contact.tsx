@@ -1,12 +1,12 @@
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
-import { Meta } from "components/Meta";
+import { Meta } from "components/shared/Meta";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Input } from "components/Input";
-import { Button } from "components/Button";
+import { Input } from "components/shared/Input";
 import { createRef, useEffect, useState } from "react";
-import { SectionTitle } from "components/SectionTitle";
+import { SectionTitle } from "components/shared/SectionTitle";
+import { Button } from 'components/buttons/Button';
 
 const schema = yup
   .object({

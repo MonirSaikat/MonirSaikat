@@ -1,5 +1,5 @@
 import { Post } from "interfaces/Post";
-import { ButtonLink } from "./ButtonLink";
+import { ButtonLink } from "../buttons/ButtonLink";
 
 interface PostItemProps {
   post: Post;

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { Meta } from "components/Meta";
+import { Meta } from "components/shared/Meta";
 import { Post } from "interfaces/Post";
 import { marked } from "marked";
 import { GetStaticPaths, GetStaticProps } from "next";

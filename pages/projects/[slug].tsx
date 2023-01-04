@@ -1,13 +1,13 @@
-import { SectionTitle } from "components/SectionTitle";
+import { SectionTitle } from "components/shared/SectionTitle";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getProjectBySlug } from "utils/projectsArray";
-import { ProjectLinks } from "components/ProjectLinks";
-import { ProjectTechnologies } from "components/ProjectTechnologies";
-import { ProjectImage } from "components/ProjectImage";
-import { ProjectDescription } from "components/ProjectDescription";
-import { Meta } from "components/Meta";
+import { ProjectDescription } from "components/projects/ProjectDescription";
+import { Meta } from "components/shared/Meta";
 import { Project } from "interfaces/Project";
+import { ProjectTechnologies } from 'components/projects/ProjectTechnologies';
+import { ProjectLinks } from 'components/projects/ProjectLinks';
+import { ProjectImage } from 'components/projects/ProjectImage';
 
 const ProjectDetails = () => {
   const [project, setProject] = useState<Project | undefined>(undefined);

@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { SectionTitle } from "components/SectionTitle";
-import { Meta } from "components/Meta";
+import { SectionTitle } from "components/shared/SectionTitle";
+import { Meta } from "components/shared/Meta";
 import { Post } from "interfaces/Post";
-import { PostItem } from "components/PostItem";
+import { PostItem } from "components/blog/PostItem";
 
 interface BlogPageProps {
   posts: Post[];

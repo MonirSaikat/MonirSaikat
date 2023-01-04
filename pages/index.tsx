@@ -1,7 +1,7 @@
-import { Header } from "components/Header";
-import { HomeProjects } from "components/HomeProject";
-import { Meta } from "components/Meta";
-import { Skills } from "components/Skills";
+import { Header } from "components/home/Header";
+import { HomeProjects } from "components/home/HomeProject";
+import { Meta } from "components/shared/Meta";
+import { Skills } from "components/skills/Skills";
 
 const HomePage = () => {
   return (
