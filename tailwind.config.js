@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      inter: ["Inter", "sans - serif"],
+      inter: ["Inter", "sans-serif"],
     },
     container: {
       padding: "1rem",
