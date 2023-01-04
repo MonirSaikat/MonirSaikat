@@ -1,8 +1,8 @@
 import Link from "next/link";
+import classNames from "classnames";
 import { AiFillLinkedin } from "react-icons/ai";
 import { RxGithubLogo } from "react-icons/rx";
 import { MdEmail } from "react-icons/md";
-import classNames from "classnames";
 
 const links = [
   {

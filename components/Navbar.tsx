@@ -1,8 +1,7 @@
-import { Logo } from "./Logo";
-import Link from "next/link";
-import { BiLinkExternal } from "react-icons/bi";
-import { useRouter } from "next/router";
 import classNames from "classnames";
+import Link from "next/link";
+import { Logo } from "./Logo";
+import { useRouter } from "next/router";
 import { activeLink } from "utils/helpers";
 import { MdLightMode, MdModeNight } from "react-icons/md";
 import { useEffect, useState } from "react";

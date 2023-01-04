@@ -1,7 +1,7 @@
-import { SectionTitle } from "components/SectionTitle";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { SectionTitle } from "components/SectionTitle";
 import { Meta } from "components/Meta";
 import { Post } from "interfaces/Post";
 import { PostItem } from "components/PostItem";

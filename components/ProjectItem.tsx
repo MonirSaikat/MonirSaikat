@@ -1,6 +1,6 @@
+import Link from "next/link";
 import classNames from "classnames";
 import { Project } from "interfaces/Project";
-import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
 import { ButtonLink } from "./ButtonLink";
 

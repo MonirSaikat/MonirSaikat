@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { SectionTitle } from "./SectionTitle";
-import { SkillItem } from "./SkillItem";
 import Marquee from "react-fast-marquee";
 import typeScriptImage from "assets/typescript.png";
 import javascriptImage from "assets/javascript.png";
@@ -12,6 +9,9 @@ import reduxImage from "assets/redux.png";
 import mongoDBImage from "assets/mongodb.png";
 import mysqlImage from "assets/mysql-logo.png";
 import { Skill } from "interfaces/Skill";
+import { useState } from "react";
+import { SectionTitle } from "./SectionTitle";
+import { SkillItem } from "./SkillItem";
 
 export const Skills = () => {
   const [skills] = useState<Skill[]>([

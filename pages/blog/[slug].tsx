@@ -1,11 +1,10 @@
-import { Meta } from "components/Meta";
-import { GetStaticPropsContext } from "next";
 import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
+import { Meta } from "components/Meta";
 import { Post } from "interfaces/Post";
 import { marked } from "marked";
 import { GetStaticPaths, GetStaticProps } from "next";
-import path from "path";
 
 const PostPage = ({ frontmatter, slug, content }: Post) => {
   return (

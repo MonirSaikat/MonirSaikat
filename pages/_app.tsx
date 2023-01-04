@@ -1,6 +1,6 @@
 import { Footer } from "components/Footer";
 import { Navbar } from "components/Navbar";
-import { NextComponentType, NextPage } from "next";
+import { NextComponentType } from "next";
 import "../styles/global.css";
 
 interface AppProps {
