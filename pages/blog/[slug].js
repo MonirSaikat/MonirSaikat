@@ -1,16 +1,12 @@
-import { Meta } from 'components/Meta';
-import fs from 'fs';
-import matter from 'gray-matter';
-import { marked } from 'marked';
-import path from 'path';
+import { Meta } from "components/Meta";
+import fs from "fs";
+import matter from "gray-matter";
+import { marked } from "marked";
+import path from "path";
 
-const PostPage = ({
-  frontmatter,
-  slug,
-  content
-}) => {
-  return(
-    <div className='prose dark:prose-invert'>
+const PostPage = ({ frontmatter, slug, content }) => {
+  return (
+    <div className="prose dark:prose-invert">
       <Meta title={`Blog | ${frontmatter.title}`} />
       <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
     </div>
@@ -20,27 +16,27 @@ const PostPage = ({
 export default PostPage;
 
 export function getStaticPaths() {
-  const files = fs.readdirSync(path.join('posts'))
+  const files = fs.readdirSync(path.join("posts"));
 
   const paths = files.map((filename) => ({
     params: {
-      slug: filename.replace('.md', ''),
+      slug: filename.replace(".md", ""),
     },
-  }))
+  }));
 
   return {
     paths,
     fallback: false,
-  }
+  };
 }
 
 export function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join('posts', slug + '.md'),
-    'utf-8'
-  )
+    path.join("posts", slug + ".md"),
+    "utf-8"
+  );
 
-  const { data: frontmatter, content } = matter(markdownWithMeta)
+  const { data: frontmatter, content } = matter(markdownWithMeta);
 
   return {
     props: {
@@ -48,5 +44,5 @@ export function getStaticProps({ params: { slug } }) {
       slug,
       content,
     },
-  }
+  };
 }

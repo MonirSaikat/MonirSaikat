@@ -1,10 +1,10 @@
-import { Footer } from 'components/Footer';
-import { Navbar } from 'components/Navbar';
-import '../styles/global.css';
+import { Footer } from "components/Footer";
+import { Navbar } from "components/Navbar";
+import "../styles/global.css";
 
 const App = ({ Component, pageProps }) => {
-  return(
-    <div className='font-inter'>
+  return (
+    <div className="font-inter">
       <Navbar />
       <div className="container mx-auto pt-3">
         <Component {...pageProps} />

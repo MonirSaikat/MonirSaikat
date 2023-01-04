@@ -1,10 +1,10 @@
-import { ProjectHeading } from './ProjectHeading';
+import { ProjectHeading } from "./ProjectHeading";
 
 export const ProjectDescription = ({ project }) => {
-  return(
+  return (
     <div className="my-5">
       <ProjectHeading>Description</ProjectHeading>
-      <p className='text-gray-800 dark:text-gray-300'>{project.details}</p>
+      <p className="text-gray-800 dark:text-gray-300">{project.details}</p>
     </div>
   );
 };
