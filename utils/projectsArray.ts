@@ -3,8 +3,20 @@ import courseBuzzImg from "assets/projects/course-buzz.png";
 import fizzFoodImg from "assets/projects/fizz-food.png";
 import gmailLpImg from "assets/projects/gmail-lp.png";
 import arsFurnitureImg from "assets/projects/ars-furniture.png";
+import monirSaikatMeImg from "assets/projects/monirsaikat.png";
 
 export const projectsArray: Project[] = [
+  {
+    year: "2022 - present",
+    title: "monirsaikat.me",
+    subtitle: "Source code for this website",
+    details: "",
+    githubUrl: "https://github.com/MonirSaikat/MonirSaikat",
+    liveUrl: "https://monirsaikat.me/",
+    slug: "monirsaikat.me",
+    technologies: ["next.js", "tailwindcss", "markdown"],
+    image: monirSaikatMeImg,
+  },
   {
     year: "2022 - present",
     title: "ARS Furniture",
