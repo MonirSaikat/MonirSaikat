@@ -10,7 +10,7 @@ export const projectsArray: Project[] = [
     year: "2022 - present",
     title: "monirsaikat.me",
     subtitle: "Source code for this website",
-    details: "",
+    details: "I have started working on my portfolio back in 2022. But created a new fresh reposotory in January 2023. ",
     githubUrl: "https://github.com/MonirSaikat/MonirSaikat",
     liveUrl: "https://monirsaikat.me/",
     slug: "monirsaikat.me",
