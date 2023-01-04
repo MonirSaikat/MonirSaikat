@@ -7,15 +7,16 @@ import { ProjectTechnologies } from "components/ProjectTechnologies";
 import { ProjectImage } from "components/ProjectImage";
 import { ProjectDescription } from "components/ProjectDescription";
 import { Meta } from "components/Meta";
+import { Project } from "interfaces/Project";
 
 const ProjectDetails = () => {
-  const [project, setProject] = useState(null);
+  const [project, setProject] = useState<Project | undefined>(undefined);
   const {
     query: { slug },
   } = useRouter();
 
   useEffect(() => {
-    setProject(getProjectBySlug(slug));
+    setProject(getProjectBySlug(slug as string));
   }, [slug]);
 
   if (!project) return null;

@@ -1,6 +1,10 @@
 import Head from "next/head";
 
-export const Meta = ({ title = "Monir Saikat" }) => {
+interface MetaProps {
+  title?: string;
+}
+
+export const Meta = ({ title = "Monir Saikat" }: MetaProps) => {
   return (
     <Head>
       <title>{title}</title>

@@ -1,6 +1,12 @@
 import classNames from "classnames";
+import React from "react";
 
-export const ProjectHeading = ({ children, icon }) => {
+interface ProjectHeadingProps {
+  children: React.ReactChild;
+  icon?: any;
+}
+
+export const ProjectHeading = ({ children, icon }: ProjectHeadingProps) => {
   const classes = classNames(
     "text-2xl mb-2 text-gray-800 font-semibold inline-flex items-center"
   );

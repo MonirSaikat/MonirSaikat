@@ -1,8 +1,13 @@
+import { Project } from "interfaces/Project";
 import { AiOutlineLink } from "react-icons/ai";
 import { ButtonLink } from "./ButtonLink";
 import { ProjectHeading } from "./ProjectHeading";
 
-export const ProjectLinks = ({ project }) => {
+interface ProjectLinksProps {
+  project: Project;
+}
+
+export const ProjectLinks = ({ project }: ProjectLinksProps) => {
   return (
     <div className="my-4">
       <ProjectHeading icon={<AiOutlineLink />}>Links</ProjectHeading>

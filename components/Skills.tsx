@@ -11,9 +11,10 @@ import reactImage from "assets/react.png";
 import reduxImage from "assets/redux.png";
 import mongoDBImage from "assets/mongodb.png";
 import mysqlImage from "assets/mysql-logo.png";
+import { Skill } from "interfaces/Skill";
 
 export const Skills = () => {
-  const [skills] = useState([
+  const [skills] = useState<Skill[]>([
     { label: "JavaScript", image: javascriptImage },
     { label: "TypeScript", image: typeScriptImage },
     { label: "PHP", image: phpImage },

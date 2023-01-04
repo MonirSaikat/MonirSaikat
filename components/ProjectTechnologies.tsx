@@ -1,7 +1,14 @@
+import { Project } from "interfaces/Project";
 import { ButtonLink } from "./ButtonLink";
 import { ProjectHeading } from "./ProjectHeading";
 
-export const ProjectTechnologies = ({ project: { technologies } }) => {
+interface ProjectTechnologiesProps {
+  project: Project;
+}
+
+export const ProjectTechnologies = ({
+  project: { technologies },
+}: ProjectTechnologiesProps) => {
   return (
     <div className="my-5">
       <ProjectHeading>Technologies</ProjectHeading>

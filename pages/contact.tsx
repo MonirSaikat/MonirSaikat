@@ -17,7 +17,7 @@ const schema = yup
   .required();
 
 const contactPage = () => {
-  const [successMessage, setSuccessMessage] = useState(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
@@ -27,7 +27,7 @@ const contactPage = () => {
     resolver: yupResolver(schema),
   });
 
-  const form = createRef();
+  const form = createRef<HTMLFormElement>();
 
   useEffect(() => {
     const timer = setTimeout(() => setSuccessMessage(null), 3000);
@@ -37,9 +37,9 @@ const contactPage = () => {
   const onSubmit = () => {
     emailjs
       .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_KEY,
-        form.current,
+        process.env.SERVICE_ID || "",
+        process.env.TEMPLATE_KEY || "",
+        form.current || "",
         process.env.PUBLIC_KEY
       )
       .then(
@@ -64,20 +64,20 @@ const contactPage = () => {
         <form onSubmit={handleSubmit(onSubmit)} ref={form}>
           <Input
             register={register}
-            errors={errors}
+            errors={errors as any}
             placeholder="Enter your full name"
             label="name"
           />
           <Input
             register={register}
-            errors={errors}
+            errors={errors as any}
             placeholder="Enter your email address"
             label="email"
           />
           <Input
             long
             register={register}
-            errors={errors}
+            errors={errors as any}
             placeholder="Enter your message"
             label="message"
             name="message"

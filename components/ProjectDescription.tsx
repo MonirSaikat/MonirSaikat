@@ -1,6 +1,11 @@
+import { Project } from "interfaces/Project";
 import { ProjectHeading } from "./ProjectHeading";
 
-export const ProjectDescription = ({ project }) => {
+interface ProjectDescriptionProps {
+  project: Project;
+}
+
+export const ProjectDescription = ({ project }: ProjectDescriptionProps) => {
   return (
     <div className="my-5">
       <ProjectHeading>Description</ProjectHeading>

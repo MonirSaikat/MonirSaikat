@@ -1,4 +1,10 @@
-export const SkillItem = ({ skill }) => {
+import { Skill } from "interfaces/Skill";
+
+interface SkillItemProps {
+  skill: Skill;
+}
+
+export const SkillItem = ({ skill }: SkillItemProps) => {
   return (
     <div className="py-5">
       <div className={`mx-8`}>

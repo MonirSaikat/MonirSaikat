@@ -1,9 +1,14 @@
 import classNames from "classnames";
+import { Project } from "interfaces/Project";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
 import { ButtonLink } from "./ButtonLink";
 
-export const ProjectItem = ({ project }) => {
+interface ProjectItemProps {
+  project: Project;
+}
+
+export const ProjectItem = ({ project }: ProjectItemProps) => {
   const containerClasses = classNames(
     `border p-4 rounded-md shadow-sm bg-white mb-5 dark:bg-slate-900 dark:border-gray-800 dark:shadow-none`
   );

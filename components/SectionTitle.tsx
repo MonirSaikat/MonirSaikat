@@ -1,6 +1,13 @@
 import classNames from "classnames";
+import React from "react";
 
-export const SectionTitle = ({ children, subtitle = false, className }) => {
+interface PropTypes {
+  children: React.ReactChild;
+  subtitle?: boolean;
+  className?: string;
+}
+
+export const SectionTitle = ({ children, subtitle, className }: PropTypes) => {
   const classes = classNames(
     className,
     {

@@ -1,7 +1,12 @@
 import { ProjectHeading } from "./ProjectHeading";
 import { FiImage } from "react-icons/fi";
+import { Project } from "interfaces/Project";
 
-export const ProjectImage = ({ project: { image } }) => {
+interface ProjectImageProps {
+  project: Project;
+}
+
+export const ProjectImage = ({ project: { image } }: ProjectImageProps) => {
   return (
     <div className="my-3">
       <ProjectHeading icon={<FiImage />}>Imgae Preview</ProjectHeading>

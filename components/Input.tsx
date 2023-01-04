@@ -1,4 +1,13 @@
 import classNames from "classnames";
+import React from "react";
+
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+  className?: string;
+  register?: any;
+  errors: any[];
+  long?: boolean;
+}
 
 export const Input = ({
   label,
@@ -7,10 +16,10 @@ export const Input = ({
   errors,
   long,
   ...rest
-}) => {
+}: InputProps) => {
   const classes = classNames(
     "border-2 rounded-sm py-2 px-4 w-full outline-none focus:border-gray-700",
-    { "border-red-500": errors[label]?.message }
+    { "border-red-500": errors[label as any]?.message }
   );
 
   const renderTextarea = (
@@ -43,7 +52,7 @@ export const Input = ({
       </label>
       {long ? renderTextarea : renderInput}
       <small className="text-red-600 font-semibold">
-        {errors[label]?.message}
+        {errors[label as any]?.message}
       </small>
     </div>
   );

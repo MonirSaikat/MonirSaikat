@@ -1,9 +1,10 @@
+import { Project } from "interfaces/Project";
 import courseBuzzImg from "assets/projects/course-buzz.png";
 import fizzFoodImg from "assets/projects/fizz-food.png";
 import gmailLpImg from "assets/projects/gmail-lp.png";
-import arsFurnitureImg from 'assets/projects/ars-furniture.png';
+import arsFurnitureImg from "assets/projects/ars-furniture.png";
 
-export const projectsArray = [
+export const projectsArray: Project[] = [
   {
     year: "2022 - present",
     title: "ARS Furniture",
@@ -64,6 +65,6 @@ export const projectsArray = [
   },
 ];
 
-export const getProjectBySlug = (slug) => {
+export const getProjectBySlug = (slug: string) => {
   return projectsArray.find((project) => project.slug === slug);
 };

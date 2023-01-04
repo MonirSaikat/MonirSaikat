@@ -1,13 +1,13 @@
-import gulp from 'gulp';
-import imagemin from 'imagemin';
+import gulp from "gulp";
+import imagemin from "imagemin";
 
-function imageSquash(){
+function imageSquash() {
   return gulp
-    .src('assets/*')
+    .src("assets/*")
     .pipe(imagemin())
-    .pipe(gulp.dest('assets/minified'));
+    .pipe(gulp.dest("assets/minified"));
 }
 
-gulp.task('imageSquash', imageSquash);
+gulp.task("imageSquash", imageSquash);
 
-export default gulp.series('imageSquash')
+export default gulp.series("imageSquash");

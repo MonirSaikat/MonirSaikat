@@ -1,10 +1,13 @@
 import { Meta } from "components/Meta";
+import { GetStaticPropsContext } from "next";
 import fs from "fs";
 import matter from "gray-matter";
+import { Post } from "interfaces/Post";
 import { marked } from "marked";
+import { GetStaticPaths, GetStaticProps } from "next";
 import path from "path";
 
-const PostPage = ({ frontmatter, slug, content }) => {
+const PostPage = ({ frontmatter, slug, content }: Post) => {
   return (
     <div className="prose dark:prose-invert">
       <Meta title={`Blog | ${frontmatter.title}`} />
@@ -15,7 +18,7 @@ const PostPage = ({ frontmatter, slug, content }) => {
 
 export default PostPage;
 
-export function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = () => {
   const files = fs.readdirSync(path.join("posts"));
 
   const paths = files.map((filename) => ({
@@ -28,9 +31,13 @@ export function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+};
 
-export function getStaticProps({ params: { slug } }) {
+export const getStaticProps: GetStaticProps = (ctx) => {
+  const {
+    params: { slug },
+  } = ctx as { params: { slug: string } };
+
   const markdownWithMeta = fs.readFileSync(
     path.join("posts", slug + ".md"),
     "utf-8"
@@ -45,4 +52,4 @@ export function getStaticProps({ params: { slug } }) {
       content,
     },
   };
-}
+};
