@@ -15,7 +15,7 @@ const links = [
 
 export const Navbar = () => {
   const router = useRouter();
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const classes = classNames("hover:text-secondary dark:text-gray-200");
 
   useEffect(() => {
