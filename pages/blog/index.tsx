@@ -11,12 +11,18 @@ interface BlogPageProps {
 }
 
 const BlogPage = ({ posts }: BlogPageProps) => {
+  let sortedPosts = posts.sort((postA: Post, postB: Post) => {
+    const date1 = new Date(postA.frontmatter.date);
+    const date2 = new Date(postB.frontmatter.date);
+    return date2.getTime() - date1.getTime();
+  });
+  
   return (
     <div>
       <SectionTitle>Blog</SectionTitle>
       <Meta title="Blog" />
       <div className="grid md:grid-cols-2 gap-3">
-        {posts.map((post) => (
+        {sortedPosts .map((post) => (
           <PostItem key={post.slug} post={post} />
         ))}
       </div>
