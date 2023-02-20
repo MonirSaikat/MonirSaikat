@@ -1,26 +1,28 @@
 ---
-title: Introduction to gray matter
-slug: introduction-to-gray-matter
+title: Format your front-matter of markdown file
+slug: format-markdown-frontmatter
+tags: gray-matter, javascript-package
 date: 3 January, 2023
 ---
 
-# Introduction to gray matter
+# Format your front-matter of markdown
 
-> Parse front-matter from a string or file. Fast, reliable and easy to use. Parses YAML front matter by default, but also has support for YAML, JSON, TOML or Coffee Front-Matter, with options to set custom delimiters. Used by metalsmith, assemble, verb and many other projects.
+Gray-matter is a JavaScript library that provides an easy way to parse front-matter from Markdown content. Front-matter is metadata that is often placed at the top of Markdown files and is enclosed by --- or +++ delimiters. It can be used to specify things like the title, author, and date of a blog post, or to add custom data to a Markdown file.
+
+Gray-matter extracts the front-matter from a Markdown file and returns an object containing the parsed data as well as the raw content of the file. This makes it easy to programmatically work with Markdown files in a variety of contexts, such as generating static websites or building content management systems.
+
+Gray-matter is widely used in the Node.js and JavaScript ecosystem, and is a popular choice for working with front-matter in Markdown files.
+
 
 ```shell
-# Example with stdin input
-$ marked -o hello.html
-hello world
-$ cat hello.html
-<p>hello world</p>
+$ npm install --save gray-matter
 ```
 
-### Returned object
+## The content of markdown file
+---
+title: Hello
+slug: home
+---
+<h1>Hello world!</h1>
 
-gray-matter returns a file object with the following properties.
-
-#### Enumerable
-
-- `file.data` **{Object}**: the object created by parsing front-matter
-- `file.content` **{String}**: the input string, with matter stripped
+Then you have acces to `data` with all the attributes you defined there in front-matter.
