@@ -10,12 +10,12 @@ date: 21 February, 2023
 CodeIgniter is a lightweight yet powerful open-source PHP framework for building web applications. It features a small footprint, a simple and easy-to-use interface, and a rich set of libraries and helpers to facilitate the development process. CodeIgniter allows developers to quickly build high-quality, scalable applications without the overhead of more complex frameworks. It also provides a robust and flexible MVC architecture, making it a popular choice for web developers who value simplicity, efficiency, and extensibility.
 
 
-#### 1: Downlaod & setup: 
+## Downlaod & setup: 
 First download the codeigniter project skeleton from the url: https://cutt.ly/j32ZnIT . Now extract and paste inside your server folder. In this case I am using xampp. So, inside my htpdocs folder I just need to paste the folder. After doing that go to your browser and visit this link: localhost/{what ever your folder name}. 
 
 For coding, we will use VS Code. Open the project folder on VSC. 
 
-#### 2. Features:
+## Features:
 Before dive into coding let's talk about codeigniter's featrues. It's MVC based, MVC means Model View and Controller. Model structure your data, controller handles those data and show via the view. So simple, it's very popular design pattern used by many other frameworks. Codeigniter is very light weight and super fast. The core framework files typically take up less 2MB where laravel take up around 50mb of disk space. Here is the full features list in v3: 
 	- MVC  
 	- Light weight
@@ -47,7 +47,7 @@ Before dive into coding let's talk about codeigniter's featrues. It's MVC based,
 	- Support for hooks and class extensions
 	- Large library for helper functions
 
-#### 3. Controllers:
+## Controllers:
 Controller is the is the middle man between model and views. It handles data through model and serves to the view. In side `/application/controllers` all your controllers go. 
 
 Let's create a controller called `Pages.php` and inside `application/config/routes.php` make the default controller to pages controller. Remember, I did not use `PagesController` because the codeigniter's route will be based on this controller name like: `/{controller}/{method}/{method_parameters}`. And inside `Pages` controller class write down this code:
@@ -74,7 +74,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
 ```
-#### 4. Views
+## Views
 From controller's method instead of echoing something let's return a html view. Inside your `views` folder create `pages` folder and add page called `home.php` and add write some html tags inside the file. 
 
 After adding file, go to your pages controller and change the content to the following: 
@@ -110,7 +110,7 @@ class Pages extends CI_Controller {
 
 ```
 
-#### 5. Database Conntection
+## Database Conntection
 There are two ways of connecting to a datbase. First of all, let's configure the database. Inside `/config/database.php`, you can conigure the DB credentials like following:
 ```php 
 $db['default'] = array(
@@ -160,7 +160,7 @@ public function users() {
 }
 ```
 
-#### 6. Model 
+## Model 
 Now, let's start using model. Using query will be very productive as we don't have to write all db logic in our controller. Let's first create a model inside `application/models` directory called `User_model.php` and write the following code: 
 ```php
 <?php 
