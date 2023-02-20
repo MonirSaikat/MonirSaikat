@@ -17,35 +17,35 @@ For coding, we will use VS Code. Open the project folder on VSC.
 
 ## Features:
 Before dive into coding let's talk about codeigniter's featrues. It's MVC based, MVC means Model View and Controller. Model structure your data, controller handles those data and show via the view. So simple, it's very popular design pattern used by many other frameworks. Codeigniter is very light weight and super fast. The core framework files typically take up less 2MB where laravel take up around 50mb of disk space. Here is the full features list in v3: 
-	- MVC  
-	- Light weight
-	- Full featured database classes with support. 
-	- Query Builder
-	- Form & data validation
-	- Security & XXS Filtering 
-	- Session management
-	- Email sending
-	- Image manipulating 
-	- File uploading    
-	- FTP class
-	- Localization
-	- Pagination
-	- Data encryption
-	- Benchmarking
-	- Fullpage caching
-	- Error logging 
-	- Application profiling
-	- Calendaring class
-	- User agent class
-	- Zip encoding 
-	- Template engine
-	- Trackback class
-	- XML-RPC class
-	- Unit testing class
-	- SEO friendly urls
-	- Flexible URI routing
-	- Support for hooks and class extensions
-	- Large library for helper functions
+- MVC  
+- Light weight
+- Full featured database classes with support. 
+- Query Builder
+- Form & data validation
+- Security & XXS Filtering 
+- Session management
+- Email sending
+- Image manipulating 
+- File uploading    
+- FTP class
+- Localization
+- Pagination
+- Data encryption
+- Benchmarking
+- Fullpage caching
+- Error logging 
+- Application profiling
+- Calendaring class
+- User agent class
+- Zip encoding 
+- Template engine
+- Trackback class
+- XML-RPC class
+- Unit testing class
+- SEO friendly urls
+- Flexible URI routing
+- Support for hooks and class extensions
+- Large library for helper functions
 
 ## Controllers:
 Controller is the is the middle man between model and views. It handles data through model and serves to the view. In side `/application/controllers` all your controllers go. 
