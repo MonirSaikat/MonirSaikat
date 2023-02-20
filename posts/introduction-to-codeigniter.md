@@ -80,9 +80,7 @@ From controller's method instead of echoing something let's return a html view. 
 After adding file, go to your pages controller and change the content to the following: 
 ```php 
 public function index() {
-	
 	$data['title'] = 'Home Page';
-
 	$this->load->view('pages/home', $data); 
 }
 ```
@@ -96,9 +94,7 @@ Now update the controller code like this:
 <?php 
 
 class Pages extends CI_Controller {
-
     public function index() {
-
         $data['title'] = 'Home Page';
 
         $this->load->view('header', $data);
@@ -107,9 +103,7 @@ class Pages extends CI_Controller {
     }
 
     public function about() {
-
         $data['title'] = 'About page';
-        
         $this->load->view('pages/about', $data); 
     }
 }
@@ -130,11 +124,8 @@ $db['default'] = array(
 After doing above actions, you can now load your database from controller or model. Let's explore inside a controller. Inside our pages controller, we will create a new function for uers page like following: 
 ```php	
 public function users() {
-	
 	$this->load->database();
-
 	$query = $this->db->query('select * from users');
-
 	$result = $query->result();
 
 	var_dump($result); 
@@ -156,11 +147,8 @@ Now, let's create a view for users page and pass the `$result` array to the view
 And update your your controller method like the following code:
 ```php
 public function users() {
-	
 	$this->load->database();
-
 	$query = $this->db->query('select * from users');
-
 	$result = $query->result();
 	
 	$data['title'] = 'Users';
@@ -195,16 +183,13 @@ And update the controller:
 <?php 
 
 class Pages extends CI_Controller {
-
     public function __construct() {
         parent::__construct();
         $this->load->model('User_model'); 
     }
  
     public function users() {
-        
         $this->load->database();
-
         $result = $this->User_model->get_users(); 
         
         $data['title'] = 'Users';
