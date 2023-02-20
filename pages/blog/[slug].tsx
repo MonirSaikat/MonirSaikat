@@ -4,7 +4,17 @@ import matter from "gray-matter";
 import { Meta } from "components/shared/Meta";
 import { Post } from "interfaces/Post";
 import { marked } from "marked";
+import hljs from "highlight.js";
 import { GetStaticPaths, GetStaticProps } from "next";
+import ts from 'typescript';
+
+const options: marked.MarkedOptions = {
+  highlight : (code: string, lang: string) => {
+    const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+    return hljs.highlight(code, { language}).value;
+  } 
+}
+marked.setOptions(options); 
 
 const PostPage = ({ frontmatter, slug, content }: Post) => {
   return (
