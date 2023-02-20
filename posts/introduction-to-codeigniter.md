@@ -161,7 +161,7 @@ public function users() {
 ```
 
 ## Model 
-Now, let's start using model. Using query will be very productive as we don't have to write all db logic in our controller. Let's first create a model inside `application/models` directory called `User_model.php` and write the following code: 
+Now, let's start using model. Using a model will be very productive as we don't have to write all db logics in our controller. Let's first create a model inside `application/models` directory called `User_model.php` and write the following code: 
 ```php
 <?php 
 
