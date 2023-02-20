@@ -1,5 +1,5 @@
 ---
-title: Format your front-matter of markdown file
+title: Format front-matter of markdown files
 slug: format-markdown-frontmatter
 tags: gray-matter, javascript-package
 date: 3 January, 2023
@@ -19,10 +19,11 @@ $ npm install --save gray-matter
 ```
 
 ## The content of markdown file
+```markdown
 ---
 title: Hello
 slug: home
 ---
 <h1>Hello world!</h1>
-
+```
 Then you have acces to `data` with all the attributes you defined there in front-matter.
