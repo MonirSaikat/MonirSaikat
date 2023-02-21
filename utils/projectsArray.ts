@@ -4,6 +4,7 @@ import fizzFoodImg from "assets/projects/fizz-food.png";
 import gmailLpImg from "assets/projects/gmail-lp.png";
 import arsFurnitureImg from "assets/projects/ars-furniture.png";
 import monirSaikatMeImg from "assets/projects/monirsaikat.png";
+import lifeLatelyImg from "assets/projects/lifelately.png"; 
 
 export const projectsArray: Project[] = [
   {
@@ -16,6 +17,17 @@ export const projectsArray: Project[] = [
     slug: "monirsaikat.me",
     technologies: ["next.js", "tailwindcss", "markdown"],
     image: monirSaikatMeImg,
+  },
+  {
+    year: "2023 - present",
+    title: "Life Lately",
+    subtitle: "Codeigniter blog website",
+    details: "I love php and love to explore frameworks built on top of it. That's why I started this project and I continuously update as much as possible. I have used codeigniter v3 as it's very is and intuitive. There are lot of features and learning those is so easy. Anyway, I loved codeigniter.",
+    githubUrl: "https://github.com/MonirSaikat/life-lately",
+    liveUrl: "http://ci3.arsit-solution.com/",
+    slug: "life-lately",
+    technologies: ["php", "codeigniter", "bootstrap"],
+    image: lifeLatelyImg,
   },
   {
     year: "2022 - present",
