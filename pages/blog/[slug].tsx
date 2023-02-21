@@ -12,7 +12,8 @@ const options: marked.MarkedOptions = {
   highlight : (code: string, lang: string) => {
     const language = hljs.getLanguage(lang) ? lang : 'plaintext';
     return hljs.highlight(code, { language}).value;
-  } 
+  },
+  gfm: true 
 }
 marked.setOptions(options); 
 
