@@ -5,7 +5,7 @@ import gmailLpImg from "assets/projects/gmail-lp.png";
 import arsFurnitureImg from "assets/projects/ars-furniture.png";
 import monirSaikatMeImg from "assets/projects/monirsaikat.png";
 import lifeLatelyImg from "assets/projects/lifelately.png"; 
-
+ 
 export const projectsArray: Project[] = [
   {
     year: "2022 - present",
