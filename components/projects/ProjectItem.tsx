@@ -10,7 +10,7 @@ interface ProjectItemProps {
 
 export const ProjectItem = ({ project }: ProjectItemProps) => {
   const containerClasses = classNames(
-    `border p-4 rounded-md shadow-sm bg-white mb-5 dark:bg-slate-900 dark:border-gray-800 dark:shadow-none`
+    `border p-4 rounded-md shadow-md bg-white mb-5 dark:bg-slate-900 dark:border-gray-800 dark:shadow-none`
   );
 
   return (
@@ -22,7 +22,7 @@ export const ProjectItem = ({ project }: ProjectItemProps) => {
       <div className="flex justify-between items-center">
         <Link
           href={`/projects/${project.slug}`}
-          className="text-xl text-gray-800 font-semibold hover:underline inline-flex items-center dark:text-gray-200"
+          className="text-xl text-sky-500 font-semibold hover:underline inline-flex items-center dark:text-gray-200"
         >
           {project.title}
           <AiOutlineLink />

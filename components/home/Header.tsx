@@ -2,7 +2,7 @@ export const Header = () => {
   return (
     <header className="py-8 min-h-[300px] flex items-center">
       <div>
-        <h1 className="text-3xl md:text-5xl text-gray-700 mb-5 font-bold dark:text-gray-200">
+        <h1 className="text-3xl md:text-5xl text-sky-500 mb-5 font-bold dark:text-gray-200">
           Hey, I' am Monir Saikat
         </h1>
         <p className="text-sm md:text-xl text-gray-600 mb-5 dark:text-gray-200">
