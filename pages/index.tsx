@@ -1,3 +1,4 @@
+import Experience from "components/home/Experience";
 import { Header } from "components/home/Header";
 import { HomeProjects } from "components/home/HomeProject";
 import { Meta } from "components/shared/Meta";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <Skills />
       <HomeProjects />
+      <Experience />
     </div>
   );
 };
