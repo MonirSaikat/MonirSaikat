@@ -1,11 +1,11 @@
 ---
-title: Database connection in PHP with mysqli
+title: DB connection in PHP with mysqli
 slug: php-mysqli-essential
 tags: php, mysql, mysqli-extension
 date: 13 March, 2023
 ---
 
-# Database connection in PHP with mysqli
+# DB connection in PHP with mysqli
 
 In this tutorial we will se how to connect to mysql database with php using the mysqli extension.
 
