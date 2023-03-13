@@ -16,14 +16,14 @@ const Experience = () => {
                     contentStyle={{ background: color, color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid skyblue' }}
                     date="March 2023 - present"
-                    dateClassName="text-sky-500"
+                    dateClassName="text-gray-100 md:text-sky-500 "
                     iconStyle={{ background: color, color: '#fff' }}
                     icon={<IoMdCodeWorking />}
                 >
                     <h3 className="vertical-timeline-element-title">Fullstack Web Developer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">ITDealBD, Rangpur.</h4>
+                    <h4 className="vertical-timeline-element-subtitle text-sm">On-site, ITDealBD, Rangpur.</h4>
                     <p>
-                        Fullstack web developer with php, laravel, javascript and react.js
+                        Solving existing problems on in-house projects and creating new products with php and laravel. SMS gateway, Payment gateway and others API integreation. 
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -31,15 +31,14 @@ const Experience = () => {
                     contentStyle={{ background: color, color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid skyblue' }}
                     date="Aug 2022 - Jan 2023"
-                    dateClassName="text-sky-500"
+                    dateClassName="text-gray-100 md:text-sky-500"
                     iconStyle={{ background: color, color: '#fff' }}
                     icon={<IoMdCodeWorking />}
                 >
                     <h3 className="vertical-timeline-element-title">Junior Web Developer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">DirectSoft</h4>
+                    <h4 className="vertical-timeline-element-subtitle text-sm">Remote, DirectSoft.</h4>
                     <p>
-
-                        Junior frontend web developer focused on react.js projects.
+                        Junior web developer focused on frontend using react.js and TypeScript
                     </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
