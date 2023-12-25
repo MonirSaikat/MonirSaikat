@@ -5,5 +5,4 @@ import {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://monirsaikat.github.io',
-  base: 'monirsaikat'
 });
