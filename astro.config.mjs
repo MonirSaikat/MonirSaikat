@@ -4,5 +4,6 @@ import {
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: "./static"
+  site: 'https://monirsaikat.github.io',
+  base: 'monirsaikat'
 });
